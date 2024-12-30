@@ -88,10 +88,6 @@ PRODUCT_PACKAGES += \
     gralloc.exynos9820 \
     libion
 
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
-
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
