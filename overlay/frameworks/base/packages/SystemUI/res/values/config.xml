@@ -25,6 +25,9 @@
          optimized for showing system-provided content while the device is
          non-interactive. -->
     <bool name="doze_display_state_supported">true</bool>
+    
+    <!-- Charging info current divider, if needed -->
+    <integer name="config_currentInfoDivider" translatable="false">1</integer>
 
     <!-- Threshold in micro watts below which a charger is rated as "slow"; 1A @ 5V -->
     <integer name="config_chargingSlowlyThreshold">5000</integer>
