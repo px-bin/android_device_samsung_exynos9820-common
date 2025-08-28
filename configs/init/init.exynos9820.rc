@@ -403,10 +403,6 @@ on post-fs-data
     chown system audio /sys/class/cirrus/cirrus_bd/over_temp_count_left
     chown system audio /sys/class/cirrus/cirrus_bd/over_temp_count_right
 
-# Dolby
-    mkdir /data/vendor/dolby 0770 media media
-    mkdir /data/vendor/multimedia 0775 system system
-
 # FM Radio
     chown system audio /dev/radio0
     chmod 0660 /dev/radio0
