@@ -29,12 +29,6 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
-                <!--Spatial Audio-->
-                <mixPort name="immersive_out" role="source" flags="AUDIO_OUTPUT_FLAG_SPATIALIZER">
-                    <profile name="" format="AUDIO_FORMAT_PCM_FLOAT"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                <!--Spatial Audio-->
-                </mixPort>
                 <mixPort name="primary-in" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
@@ -127,21 +121,21 @@
                 <route type="mix" sink="Earpiece"
                        sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="Speaker"
-                       sources="primary-out,deep-buffer,fast,immersive_out"/>
+                       sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="Wired Headset"
-                       sources="primary-out,deep-buffer,fast,immersive_out"/>
+                       sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="Wired Headphone"
-                       sources="primary-out,deep-buffer,fast,immersive_out"/>
+                       sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="Bt Sco"
-                       sources="primary-out,deep-buffer,fast,immersive_out"/>
+                       sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="Bt Sco Headset"
-                       sources="primary-out,deep-buffer,fast,immersive_out"/>
+                       sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="Bt Sco Car Kit"
-                       sources="primary-out,deep-buffer,fast,immersive_out"/>
+                       sources="primary-out,deep-buffer,fast"/>
                 <route type="mix" sink="USB Device Out"
-                       sources="primary-out,fast,immersive_out" />
+                       sources="primary-out,fast" />
                 <route type="mix" sink="USB Headset Out"
-                       sources="primary-out,fast,immersive_out" />
+                       sources="primary-out,fast" />
                 <route type="mix" sink="primary-in"
                        sources="Built-In Mic,Wired Headset Mic,Bt Sco Headset Mic,Aux Device In,Voice Call Mic,FM Mic,USB Device In,USB Headset In"/>
             </routes>
