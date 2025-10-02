@@ -50,6 +50,8 @@ PRODUCT_COPY_FILES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 # Bluetooth
+$(call soong_config_set,brcm_libbt,custom_bt_config,//$(COMMON_PATH):vnd_exynos9820.txt)
+
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl:64 \
     android.hardware.bluetooth@1.0-service \
@@ -266,6 +268,7 @@ PRODUCT_PACKAGES += \
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
+    hardware/broadcom/libbt \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung \
