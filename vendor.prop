@@ -28,6 +28,10 @@ bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 
+## Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 ## Dalvik
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.lockprof.threshold=500
