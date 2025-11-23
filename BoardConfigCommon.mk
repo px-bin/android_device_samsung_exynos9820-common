@@ -53,7 +53,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 
 ## Camera
-$(call soong_config_set,samsungCameraVars,usage_64bit,true)
+$(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
 ifneq ($(TARGET_DEVICE),beyond0lte)
 SOONG_CONFIG_NAMESPACES += samsungCameraVars
 SOONG_CONFIG_samsungCameraVars += extra_ids
@@ -153,7 +153,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 ENABLE_VENDOR_RIL_SERVICE := true
 
 $(call soong_config_set,cbd,protocol,sipc)
-$(call soong_config_set,cbd,use_legacy_sipc_ioctl,true)
+$(call soong_config_set_bool,cbd,use_legacy_sipc_ioctl,true)
 
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
@@ -185,4 +185,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
-$(call soong_config_set,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
+$(call soong_config_set_bool,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
