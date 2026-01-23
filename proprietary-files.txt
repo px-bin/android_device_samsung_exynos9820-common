@@ -149,6 +149,9 @@ vendor/tee/driver/00000000-0000-0000-0000-564c544b4456
 vendor/tee/ffffffff-0000-0000-0000-000000000030
 vendor/tee/tui/resolution_common/ID00000100
 
+# VaultKeeper Dummy Libs
+vendor/lib64/libvkmanager_vendor.so;DUMMY_SHARED_LIB
+
 ## VNDK - from prebuilts/vndk/v33 - android-15.0.0_r20
 vendor/lib64/libcrypto-tm.so;FIX_SONAME|7291c0e41fa86b3739df0c0c20de21e88f43661a|f53b9d897921ade77c511eb98955db374fcc5c69
 
