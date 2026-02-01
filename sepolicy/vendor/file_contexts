@@ -54,8 +54,6 @@
 /efs/usb_hw_param(/.*)?                      u:object_r:sec_efs_file:s0
 /efs/wv.keys                                 u:object_r:sec_efs_file:s0
 
-/mnt/vendor/efs/spen(/.*)?                   u:object_r:spen_efs_file:s0
-
 ## Sysfs
 # Block
 /sys/devices/platform/(.*)/block/sda/queue/discard_max_bytes  u:object_r:sysfs_block_writable:s0
@@ -71,9 +69,6 @@
 # Extcon
 /sys/devices/platform/(.*)/extcon/extcon[0-9]/cable.[0-9]/name        u:object_r:sysfs_extcon:s0
 /sys/devices/platform/(.*)/extcon/extcon[0-9]/state                   u:object_r:sysfs_extcon:s0
-
-# S Pen
-/sys/devices/virtual/sec/sec_epen(/.*)?                       u:object_r:sysfs_spen:s0
 
 # Sensors
 /sys/devices/platform/10970000.spi/spi_master/spi17/spi17.0(/.*)                  u:object_r:sysfs_iio:s0
@@ -91,4 +86,3 @@
 ## Vendor
 /(vendor|system/vendor)/bin/hw/gps.sh                                                               u:object_r:gpsd_exec:s0
 
-/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.spen-service\.davinci                        u:object_r:hal_samsung_spen_default_exec:s0
