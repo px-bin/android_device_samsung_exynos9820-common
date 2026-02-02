@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
+# Copyright (C) 2021-2026 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -282,7 +282,7 @@ PRODUCT_PACKAGES += \
     SPenActions
 
 PRODUCT_PACKAGES += \
-    vendor.samsung.hardware.spen-service.davinci
+    vendor.samsung.hardware.spen-service
 endif
 
 # Task profiles
